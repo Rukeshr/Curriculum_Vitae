@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rukesh R — Network & Security Consultant. Resume.">
+<title>Rukesh R | Network & Security Consultant</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --card: #fff;
+  --text: #1c2430;
+  --muted: #5b6675;
+  --accent: #0b63ce;
+  --line: #e3e7ee;
+  --chip: #eaf2fd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f141b;
+    --card: #171e28;
+    --text: #e6ebf2;
+    --muted: #9aa6b6;
+    --accent: #5aa2ff;
+    --line: #263040;
+    --chip: #1c2a3f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; }
+
+header {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h1 { margin: 4px 0; font-size: 2rem; }
+.sub { margin: 0; color: var(--muted); }
+.avatar {
+  width: 96px; height: 96px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: grid; place-items: center;
+  font-size: 2rem; font-weight: 700;
+  object-fit: cover; flex: none;
+}
+.info { flex: 1; min-width: 220px; }
+.contact { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.badge, .chip {
+  background: var(--chip); color: var(--accent);
+  border-radius: 999px; padding: 3px 12px; font-size: .85rem;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-top: 16px;
+}
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent);
+}
+h3 { margin: 0; font-size: 1.05rem; }
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+.job { padding: 14px 0; border-top: 1px solid var(--line); }
+.job:first-of-type { border-top: 0; padding-top: 0; }
+ul { margin: 6px 0 0; padding-left: 20px; }
+li { margin: 4px 0; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.group { margin-bottom: 14px; }
+.group h3 { font-size: .95rem; margin-bottom: 6px; }
+footer { text-align: center; color: var(--muted); margin-top: 24px; font-size: .9rem; }
+
+@media print {
+  body { background: #fff; }
+  section, header { border: 0; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script>
+// ---- Edit this object to update the whole site ----
+const RESUME_DATA = {
+  name: "Rukesh R",
+  title: "Sr Technical Consultant | Network & Security",
+  tagline: "Enterprise Networking & Infrastructure Security",
+  initials: "RR",
+  photo: "", // optional image URL
+  phone: "+91 88800 31699",
+  email: "rukesh.16r@gmail.com",
+  badges: ["Cisco Certified CCNA", "Fortinet NSE 4 Certified"],
+  summary: [
+    "Network & Security Consultant with 3+ years of experience designing, implementing, and supporting enterprise networking and cybersecurity solutions for manufacturing, healthcare, automotive, BFSI, government, and IT/ITES customers. Delivers enterprise infrastructure projects end-to-end, from requirement analysis and solution design through implementation and post-deployment support.",
+    "Certified in CCNA and Fortinet NSE 1–3, with hands-on expertise across Cisco, Palo Alto Networks, Fortinet, Zscaler, and SentinelOne technologies. Strong experience in enterprise LAN/WAN architecture and routing and switching technologies including OSPF, EIGRP, BGP, VLAN, STP, EtherChannel, HSRP, and VRRP, along with secure network design covering firewalls, VPNs, NAT, and access control.",
+    "Experienced across the complete solution lifecycle — requirement gathering, architecture design, HLD/LLD documentation, BOM preparation, implementation planning, deployment, and troubleshooting. Skilled at root-cause analysis for business-critical network and security incidents, and at preparing technical documentation that supports ongoing operations and upgrades.",
+    "Works closely with customers, field engineering teams, and OEM partners including Cisco, Palo Alto Networks, and Fortinet to deliver secure, reliable infrastructure across multi-site enterprise environments."
+  ],
+  experience: [
+    {
+      role: "Sr Technical Consultant", company: "Connectivity IT Solutions Pvt Ltd", period: "2024 – Present",
+      points: [
+        "Design and deliver enterprise LAN, WAN, firewall, and wireless solutions for customers across manufacturing, healthcare, automotive, BFSI, and government sectors.",
+        "Author High-Level Design (HLD), Low-Level Design (LLD), and as-built documentation for enterprise networking and security deployments.",
+        "Support pre-sales engagements with solution design, bill-of-materials preparation, technical inputs for RFP/RFI responses, and effort estimation.",
+        "Design high-availability Layer 2 and Layer 3 architectures using OSPF, EIGRP, BGP, VLAN, STP, EtherChannel, HSRP, and VRRP.",
+        "Configure and harden firewall policies, site-to-site and remote-access VPNs, NAT, and access-control frameworks across Cisco, Palo Alto, and FortiGate platforms.",
+        "Conduct root-cause analysis for business-critical network and security escalations, minimising customer downtime.",
+        "Run customer workshops, proof-of-concepts, and solution demonstrations to validate solution fit and support decision-making.",
+        "Collaborate with OEM partners and field engineering teams, and share technical knowledge with junior engineers through design reviews."
+      ]
+    },
+    {
+      role: "Technical Consultant", company: "Connectivity IT Solutions Pvt Ltd", period: "Jul 2023 – 2024",
+      points: [
+        "Deployed Cisco and Arista LAN infrastructure for Micron, integrating wired, wireless, and Palo Alto security.",
+        "Designed and deployed LAN/WAN routing, switching, and FortiGate security for Shearwater Health.",
+        "Deployed and configured Palo Alto firewalls to secure enterprise network access for Pegatron.",
+        "Deployed Zscaler ZTP for secure internet access and traffic management at Toyota Kirloskar Motors.",
+        "Installed and configured head-end routers for secure network communication for Karnataka State Police.",
+        "Supported SentinelOne Ranger AD deployment with Active Directory integration for Axis Bank.",
+        "Provided remote support for network, firewall, and connectivity issues for InMobi.",
+        "Prepared technical documentation and reports to support ongoing operations and upgrades."
+      ]
+    },
+    {
+      role: "Software Engineer", company: "Idexcel Technologies", period: "Sep 2020 – Nov 2022",
+      points: [
+        "Upgraded a microservices architecture by migrating Ruby on Rails 4 to 6 and Ruby 2.5 to 3.0.",
+        "Built customer-facing features in Ruby on Rails with HTML, CSS, and JavaScript front ends."
+      ]
+    }
+  ],
+  skills: [
+    { group: "Routing & Switching", items: ["OSPF", "EIGRP", "BGP", "VLANs", "Inter-VLAN Routing", "VTP", "Spanning Tree", "EtherChannel", "HSRP", "VRRP"] },
+    { group: "Firewalls & Security", items: ["Cisco ASA / FTD", "Palo Alto", "FortiGate (UTM, HA)", "Check Point", "Zscaler", "SentinelOne", "Site-to-Site & Remote VPN", "ACLs / NAT"] },
+    { group: "Infrastructure Services", items: ["DHCP", "NAT / PAT", "SNMP", "Syslog", "NTP"] },
+    { group: "Tools & Platforms", items: ["Wireshark", "Cisco DNA Center", "Packet Tracer", "Catalyst 9300 / 9500", "ISR / ASR Routers"] },
+    { group: "Solution Delivery", items: ["HLD / LLD Design", "BOM Preparation", "RFP/RFI Inputs", "Campus LAN Builds (2-tier / 3-tier)", "POC Execution", "Root-Cause Analysis"] },
+    { group: "OEM Exposure", items: ["Cisco", "Palo Alto Networks", "Fortinet", "Zscaler", "SentinelOne", "Check Point", "Arista"] }
+  ],
+  industries: ["Manufacturing", "Healthcare", "Automotive", "BFSI", "Government / PSU", "IT/ITES"],
+  certifications: [
+    "Cisco Certified Network Associate (CCNA)",
+    "Fortinet Network Security Expert (NSE) 1, 2, 3 & 4",
+    "Six Sigma Black Belt"
+  ],
+  education: [
+    { degree: "B.E. — Electronics & Communication", school: "Global Academy of Technology (VTU)", meta: "2016–2019 · 6.8 CGPA" },
+    { degree: "Diploma — Electronics & Communication", school: "BET Polytechnic (DTE)", meta: "2013–2016 · 68%" },
+    { degree: "High School", school: "Anitha High School (KSEEB)", meta: "2013 · 71%" }
+  ]
+};
+
+// ---- Renderer: builds the page from RESUME_DATA above ----
+(function () {
+  const d = RESUME_DATA;
+  const list = (a) => (Array.isArray(a) ? a : []);
+  const el = (tag, props = {}, children = []) => {
+    const node = document.createElement(tag);
+    Object.entries(props).forEach(([k, v]) => {
+      if (k === "class") node.className = v;
+      else node.setAttribute(k, v);
+    });
+    list(children).forEach((c) => node.appendChild(typeof c === "string" ? document.createTextNode(c) : c));
+    return node;
+  };
+
+  function renderHeader() {
+    const avatar = d.photo
+      ? el("img", { class: "avatar", src: d.photo, alt: `Portrait of ${d.name}` })
+      : el("div", { class: "avatar", "aria-hidden": "true" }, [d.initials]);
+
+    const contact = el("div", { class: "contact" }, [
+      el("a", { href: `tel:${d.phone.replace(/[^+\d]/g, "")}` }, [d.phone]),
+      el("a", { href: `mailto:${d.email}` }, [d.email])
+    ]);
+
+    const badges = el("div", { class: "badges" },
+      list(d.badges).map((b) => el("span", { class: "badge" }, [b]))
+    );
+
+    const info = el("div", { class: "info" }, [
+      el("p", { class: "eyebrow" }, ["Curriculum Vitae"]),
+      el("h1", {}, [d.name]),
+      el("p", { class: "sub" }, [d.title]),
+      el("p", { class: "sub" }, [d.tagline]),
+      contact,
+      badges
+    ]);
+
+    return el("header", {}, [avatar, info]);
+  }
+
+  function renderSummary() {
+    return el("section", {}, [
+      el("h2", {}, ["Professional Summary"]),
+      ...list(d.summary).map((p) => el("p", {}, [p]))
+    ]);
+  }
+
+  function renderExperience() {
+    const jobs = list(d.experience).map((j) =>
+      el("div", { class: "job" }, [
+        el("h3", {}, [`${j.role} · ${j.company}`]),
+        el("p", { class: "meta" }, [j.period]),
+        el("ul", {}, list(j.points).map((p) => el("li", {}, [p])))
+      ])
+    );
+    return el("section", {}, [el("h2", {}, ["Professional Experience"]), ...jobs]);
+  }
+
+  function renderSkills() {
+    const groups = list(d.skills).map((g) =>
+      el("div", { class: "group" }, [
+        el("h3", {}, [g.group]),
+        el("div", { class: "chips" }, list(g.items).map((i) => el("span", { class: "chip" }, [i])))
+      ])
+    );
+    return el("section", {}, [el("h2", {}, ["Technical Skills"]), ...groups]);
+  }
+
+  function renderIndustries() {
+    return el("section", {}, [
+      el("h2", {}, ["Industry Experience"]),
+      el("div", { class: "chips" }, list(d.industries).map((i) => el("span", { class: "chip" }, [i])))
+    ]);
+  }
+
+  function renderCertifications() {
+    return el("section", {}, [
+      el("h2", {}, ["Certifications"]),
+      el("ul", {}, list(d.certifications).map((c) => el("li", {}, [c])))
+    ]);
+  }
+
+  function renderEducation() {
+    const entries = list(d.education).map((e) =>
+      el("p", { style: "margin:0 0 10px" }, [
+        el("strong", {}, [e.degree]),
+        el("br"),
+        el("span", { class: "meta" }, [`${e.school} · ${e.meta}`])
+      ])
+    );
+    return el("section", {}, [el("h2", {}, ["Education"]), ...entries]);
+  }
+
+  function renderFooter() {
+    return el("footer", {}, [`${d.name} · ${d.tagline}`]);
+  }
+
+  function render() {
+    document.title = `${d.name} | ${d.tagline}`;
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", `${d.name} — ${d.title}. Resume.`);
+
+    const app = document.getElementById("app");
+    app.appendChild(renderHeader());
+    app.appendChild(renderSummary());
+    app.appendChild(renderExperience());
+    app.appendChild(renderSkills());
+    app.appendChild(renderIndustries());
+    app.appendChild(renderCertifications());
+    app.appendChild(renderEducation());
+    app.appendChild(renderFooter());
+  }
+
+  document.addEventListener("DOMContentLoaded", render);
+})();
+</script>
+</body>
+</html>
